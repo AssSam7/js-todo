@@ -15,7 +15,7 @@ function createListItem(val) {
 }
 
 // Adding item to the list
-toDoBtn.addEventListener("submit", (e) => {
+toDoBtn.addEventListener("click", (e) => {
   let title = toDoTitle.value;
   let DOM = createListItem(title);
   toDoList.insertAdjacentHTML("beforeend", DOM);
